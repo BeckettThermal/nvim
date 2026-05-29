@@ -1,3 +1,5 @@
+require("lspconfig").clangd.setup({}) -- Prevents Mason from installing its own clang
+
 vim.lsp.config('*', {
     root_markers = { '.git' },
 })
